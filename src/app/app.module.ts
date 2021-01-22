@@ -12,6 +12,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import {RouterModule} from '@angular/router';
 import { FirstComponent } from './layout/first/first.component';
 import { SecondComponent } from './layout/second/second.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SecondComponent } from './layout/second/second.component';
     HeaderComponent,
     FooterComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    ProgressBarComponent
   ],
   imports: [
     RouterModule.forRoot([
