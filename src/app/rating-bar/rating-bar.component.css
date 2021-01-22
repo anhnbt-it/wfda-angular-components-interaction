@@ -1,0 +1,11 @@
+.rating-unit {
+    padding: 6px 10px;
+    background-color: black;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.active {
+    background-color: blue;
+}

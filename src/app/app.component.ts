@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'name-card-application';
+
+  countdownMsg = '';
+
+  countdownAliasMsg = '';
+
+  finishCountdown(): void {
+    this.countdownMsg = 'Finished!';
+  }
+
+  endCountdown(): void {
+    this.countdownAliasMsg = 'Ended!';
+  }
 }

@@ -7,6 +7,18 @@
     </ul>
 </nav>
 <router-outlet>
-    <app-name-card name="Tuan Anh" email="anhnbt.it@gmail.com" phone="0346868928"></app-name-card>
+    <app-view-encapsulation></app-view-encapsulation>
+    <app-view-default></app-view-default>
+    <app-pipe-demo></app-pipe-demo>
+    <app-rating-bar></app-rating-bar>
+    <app-countdown-timer-event-alias seconds="10" (timerEnd)="endCountdown()"></app-countdown-timer-event-alias>
+    <p>{{ countdownAliasMsg }}</p>
+    <app-countdown-timer-event seconds="10" (finish)="finishCountdown()"></app-countdown-timer-event>
+    <p *ngIf="countdownMsg">{{ countdownMsg }}</p>
+    <app-countdown-timer-alias remaining-time="60"></app-countdown-timer-alias>
+    <app-countdown-timer-onchanges seconds="99"></app-countdown-timer-onchanges>
+    <app-countdown-timer-get-set seconds="abc"></app-countdown-timer-get-set>
+    <app-countdown-timer seconds="6"></app-countdown-timer>
     <app-progress-bar width="65"></app-progress-bar>
+    <app-name-card name="Tuan Anh" email="anhnbt.it@gmail.com" phone="0346868928"></app-name-card>
 </router-outlet>
